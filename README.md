@@ -199,7 +199,7 @@ User Opens App
 ## Project Demo
 
 ### Video
-![Screenrecord1](screenrecord.mp4)
+[Watch the Screen Recording]((https://drive.google.com/file/d/1d9e_AEDyStGCrJne2a75mxW_cFYUgR--/view?usp=sharing))
 
 The demo walks through the full OATHCLOCK experience:
 - Adding tasks and committing to the clock
