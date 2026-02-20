@@ -14,13 +14,22 @@
 <div id="app">
 
   <!-- ══════════════════════════════════
-       LEFT PANEL — Main clock area
+       Main clock area
   ══════════════════════════════════ -->
   <div id="left">
-
-    <!-- Theme indicator icon — swap .ph for <img src="your-icon.png" alt="theme"> -->
     <div id="theme-icon">
-      <div class="ph">⊞</div>
+      <!-- Shown in normal / default mode -->
+      <img
+        class="theme-img theme-default"
+        src="blue icon.png"
+        alt="Default theme indicator"
+      />
+      <!-- Shown only in failure mode -->
+      <img
+        class="theme-img theme-failure"
+        src="failure icon.png"
+        alt="Failure theme indicator"
+      />
     </div>
 
     <!-- Title -->
@@ -95,7 +104,7 @@
 
   <div id="fail-hl">YOU SAID YOU WOULD.</div>
 
-  <!-- Static failure lines — no cycling -->
+  <!-- Static failure lines -->
   <div id="fail-lines">
     <p class="fail-sub">And you didn't.</p>
     <p class="fail-sub">Predictable.</p>
@@ -124,7 +133,7 @@
     <span id="btn-rdm-txt">REDEEM</span>
   </button>
 
-</div><!-- /fail-overlay -->
+</div>
 
 
 <!-- Confetti layer -->
