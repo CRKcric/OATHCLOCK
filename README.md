@@ -212,8 +212,8 @@ The demo walks through the full OATHCLOCK experience:
 
 ## AI Tools Used
 
-**Claude (Anthropic)** - Primary development assistant across the entire project 
-**ChatGPT** - Message pool
+Claude (Anthropic) - Primary development assistant across the entire project 
+ChatGPT - Message pool
 ---
 
 ## License
