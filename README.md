@@ -199,7 +199,7 @@ User Opens App
 ## Project Demo
 
 ### Video
-[▶️ Click to watch the demo](assets/Video%20recording.mp4)
+[▶️ Click to watch the demo](https://github.com/CRKcric/OATHCLOCK/releases/download/v1.0.0/screenrecord.mp4)
 
 
 The demo walks through the full OATHCLOCK experience:
