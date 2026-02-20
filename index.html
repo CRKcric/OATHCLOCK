@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OATHCLOCK</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=VT323&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div id="app">
+
+  <!-- ══════════════════════════════════
+       LEFT PANEL — Main clock area
+  ══════════════════════════════════ -->
+  <div id="left">
+
+    <!-- Theme indicator icon — swap .ph for <img src="your-icon.png" alt="theme"> -->
+    <div id="theme-icon">
+      <div class="ph">⊞</div>
+    </div>
+
+    <!-- Title -->
+    <div id="title-block">
+      <div id="title">OATHCLOCK</div>
+      <div id="subtitle">The clock remembers</div>
+    </div>
+
+    <!-- Timer display -->
+    <div id="timer-wrap">
+      <div id="timer-box">
+        <div id="timer">00:00:00</div>
+      </div>
+      <div id="status-label">THE CLOCK AWAITS...</div>
+    </div>
+
+    <!-- Message area -->
+    <div id="msg-section">
+      <div id="sys-warning-label">⚠ SYSTEM WARNING</div>
+      <div id="message-box">
+        <div id="message-text">The clock awaits...</div>
+      </div>
+      <button id="btn-complete" onclick="markComplete()">✓ MARK COMPLETE</button>
+    </div>
+
+  </div><!-- /left -->
+
+
+  <!-- ══════════════════════════════════
+       RIGHT PANEL — Task column
+  ══════════════════════════════════ -->
+  <div id="right">
+
+    <div id="right-header">
+      <h2>YOUR TASKS</h2>
+    </div>
+
+    <!-- Task cards rendered by JS -->
+    <div id="task-list"></div>
+
+    <!-- Max 3 warning -->
+    <div id="max-warn">⚠ MAX 3 TASKS — LIMIT REACHED</div>
+
+    <!-- Add task form -->
+    <div id="add-section">
+      <label>COMMIT A TASK</label>
+      <input class="t-input" id="in-name" type="text" placeholder="Task name..." maxlength="28" />
+      <div class="in-row">
+        <input class="t-input" id="in-dur" type="number" placeholder="Min" min="1" max="999" />
+        <button id="btn-add" onclick="addTask()">+ COMMIT</button>
+      </div>
+    </div>
+
+    <!-- Streak display -->
+    <div id="streak-sec">
+      <div id="streak-lbl">STREAK</div>
+      <div id="streak-disp">
+        <span id="streak-fire">🔥</span>
+        <div id="streak-num">0</div>
+      </div>
+    </div>
+
+  </div><!-- /right -->
+
+</div><!-- /app -->
+
+
+<!-- ══════════════════════════════════
+     FAILURE OVERLAY
+══════════════════════════════════ -->
+<div id="fail-overlay">
+
+  <div id="fail-hl">YOU SAID YOU WOULD.</div>
+
+  <!-- Static failure lines — no cycling -->
+  <div id="fail-lines">
+    <p class="fail-sub">And you didn't.</p>
+    <p class="fail-sub">Predictable.</p>
+    <p class="fail-sub scary">You had enough time.</p>
+    <p class="fail-sub scary">You chose something else.</p>
+    <p class="fail-sub scary">Be honest. Was it ever serious?</p>
+  </div>
+
+  <!-- Lecture (appears after first REDEEM click) -->
+  <div id="lecture-box">
+    <div id="lecture-txt">
+      You had time.<br />
+      You chose not to use it.<br /><br />
+      Let's be very clear — this was not bad luck.<br />
+      This was not circumstance. This was a choice.<br />
+      You made it quietly, when you thought no one was watching.<br /><br />
+      The system was watching.<br />
+      The streak is gone. Is this the person you intended to become?
+    </div>
+    <button id="btn-rdm-real" onclick="redeemReal()">↩ REDEEM FOR REAL</button>
+  </div>
+
+  <!-- First redeem button -->
+  <button id="btn-rdm" onclick="showLecture()">
+    <div class="rdm-tooltip">Oh now you seek redemption? Tch, mortal.</div>
+    <span id="btn-rdm-txt">REDEEM</span>
+  </button>
+
+</div><!-- /fail-overlay -->
+
+
+<!-- Confetti layer -->
+<div id="confetti-layer"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
