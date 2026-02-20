@@ -5,11 +5,11 @@
 **Team Name:** Ink&Ivory
 
 ### Team Members
-- **Member 1:** Hrithika E B - ASIET
-- **Member 2:** C R Krishna - ASIET
+- **Member 1:** C R Krishna - ASIET
+- **Member 2:** Hrithika E B - ASIET
 
 ### Hosted Project Link
-[mention your project hosted link here]
+https://crkcric.github.io/OATHCLOCK/
 
 ---
 
@@ -70,10 +70,10 @@ No installation required. All files are static — just open in a browser.
 
 ```bash
 # Clone the repository
-git clone https://github.com/[your-username]/oathclock.git
+git clone https://github.com/CRKcric/OATHCLOCK.git
 
 # Navigate into the project folder
-cd oathclock
+cd tinkherhack 2026
 ```
 
 ### Run
@@ -108,13 +108,13 @@ oathclock/
 
 ### Screenshots
 
-![Screenshot1](screenshots/idle-state.png)
+![Screenshot1](idle-state.png)
 *Default idle state — neon blue theme, clock awaiting first task commit*
 
-![Screenshot2](screenshots/running-state.png)
+![Screenshot2](running-state.png)
 *Task running — page has begun its slow shift toward orange/crimson at 40% remaining*
 
-![Screenshot3](screenshots/failure-state.png)
+![Screenshot3](sfailure-state.png)
 *Failure overlay — full crimson theme, "YOU SAID YOU WOULD." headline, lecture box visible*
 
 ---
@@ -192,6 +192,52 @@ User Opens App
            • REDEEM FOR REAL → page fades back to neon       │
            • User must restart manually                      │
                                                             ◄┘
+```
+
+---
+
+## Project Demo
+
+### Video
+![Screenrecord1](screenrecord.mkv)
+
+The demo walks through the full OATHCLOCK experience:
+- Adding tasks and committing to the clock
+- The live page theme shift as time runs down — panels, title, borders, and timer all bleeding from neon blue to crimson
+- The 25% warn phase (orange glow) and 10% critical phase (shake + pulse)
+- Marking a task complete mid-timer — confetti, congrats message, streak increment
+- Letting the timer hit zero — full failure transformation, overlay lecture, and the redemption flow back to calm
+
+---
+
+## AI Tools Used
+
+**Claude (Anthropic)** - Primary development assistant across the entire project 
+**ChatGPT** - Message pool
+---
+
+## License
+
+This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
+
+```
+MIT License
+
+Copyright (c) 2025 Ink&Ivory
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
 ```
 
 ---
