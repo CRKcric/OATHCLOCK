@@ -125,11 +125,11 @@ oathclock/
 
 ```
 ┌─────────────────────────────────────────────────────────┐
-│                        index.html                        │
+│                        index.html                       │
 │         (Layout: 75% left panel / 25% right panel)      │
-└──────────────┬──────────────────────────┬───────────────┘
-               │                          │
-       ┌───────▼───────┐         ┌────────▼────────┐
+└──────────────┬───────────────────────────┬──────────────┘
+               │                           │
+       ┌───────▼────────┐         ┌────────▼─────────┐
        │   style.css    │         │     app.js       │
        │                │         │                  │
        │ CSS Custom     │◄────────│ Theme Shift      │
@@ -138,16 +138,16 @@ oathclock/
        │                │ tick    │                  │
        │ 4s transitions │         │ Game State       │
        │ on all elements│         │ (phase, tasks,   │
-       └───────────────┘         │  streak, timer)  │
-                                 │                  │
-                                 │ setInterval(1s)  │
-                                 │ → checkPhase()   │
-                                 │ → interpolate    │
-                                 │   RGB palettes   │
-                                 └──────────────────┘
+       └────────────────┘         │  streak, timer)  │
+                                  │                  │
+                                  │ setInterval(1s)  │
+                                  │ → checkPhase()   │
+                                  │ → interpolate    │
+                                  │   RGB palettes   │
+                                  └──────────────────┘
 ```
 
-*CSS custom properties act as the bridge — JS writes raw RGB values every second, CSS transitions on every consuming element create the natural visual lag that makes the page feel slower than the clock.*
+*CSS custom properties act as the bridge — JS writes raw RGB values every second, CSS transitions on every consuming element create the natural visual lag that makes the page feel slower than the clock.* 
 
 #### Application Workflow
 
@@ -163,7 +163,7 @@ User Opens App
       │
       │  Click START
       ▼
-  RUNNING (... badge) ──────────────────────────────────────┐
+  RUNNING (... badge) ───────────────────────────────────────┐
       │                                                      │
       │  Every second:                                       │
       │  • Timer counts down                                 │
@@ -179,7 +179,7 @@ User Opens App
       ├──── User clicks MARK COMPLETE ──────────────────────►│
       │          │                                           │
       │          ▼                                           │
-      │     ✓ badge, streak++, confetti, page resets to neon │
+      │    ✓ badge, streak++, confetti, page resets to neon  │
       │                                                      │
       └──── Timer hits 0:00 ────────────────────────────────►│
                  │                                           │
