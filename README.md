@@ -114,7 +114,7 @@ oathclock/
 ![Screenshot2](running-state.png)
 *Task running — page has begun its slow shift toward orange/crimson at 40% remaining*
 
-![Screenshot3](sfailure-state.png)
+![Screenshot3](failure-state.png)
 *Failure overlay — full crimson theme, "YOU SAID YOU WOULD." headline, lecture box visible*
 
 ---
@@ -199,7 +199,7 @@ User Opens App
 ## Project Demo
 
 ### Video
-![Screenrecord1](screenrecord.mkv)
+![Screenrecord1](screenrecord.mp4)
 
 The demo walks through the full OATHCLOCK experience:
 - Adding tasks and committing to the clock
